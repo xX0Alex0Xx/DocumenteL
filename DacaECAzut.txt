@@ -1,0 +1,16 @@
+if w==h*2:
+                    
+                        
+                    color = (255,69,0)
+                    cv2.rectangle(frame, (int(x-w/2), int(y-h/2)), (int(x+w/2), int(y+h/2)),
+                                color=color, thickness=2)
+                    cv2.putText(frame, class_name, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1,
+                                color)
+                    cv2.putText(frame, 'cazut', (x, y+20), cv2.FONT_HERSHEY_SIMPLEX, 1,
+                                color)
+                else:
+                    color = (255,140,0)
+                    cv2.rectangle(frame, (int(x-w/2), int(y-h/2)), (int(x+w/2), int(y+h/2)),
+                                color=color, thickness=2)
+                    cv2.putText(frame, class_name, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1,
+                                color)
